@@ -1,10 +1,10 @@
-## Welcome to the RTxperts GitHub Page
+# Welcome to the RTxperts GitHub Page
 
 
 
-# Projects
+## Projects
 
-## [Reading Intel NIC Diagnostics](https://github.com/IntervalZero/RTxperts/tree/master/IntelNicDiagnostics)
+#$# [Reading Intel NIC Diagnostics](https://github.com/IntervalZero/RTxperts/tree/master/IntelNicDiagnostics)
 
 
  
