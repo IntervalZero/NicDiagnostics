@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--*********************************************************************************-->
+  <!--                                                                                 -->
+  <!-- This file was generated using the RTX64 Application Template for Visual Studio. -->
+  <!--                                                                                 -->
+  <!-- Created: 4/28/2016 11:17:26 AM                                                 -->
+  <!-- User: medwards                                                                      -->
+  <!--                                                                                 -->
+  <!--*********************************************************************************-->
+  <!-- **************************  -->
+  <!--                             -->
+  <!--   Project Configurations    -->
+  <!--                             -->
+  <!-- **************************  -->
+  <ItemGroup Label="ProjectConfigurations">
+    <!-- Debug x64 configurations -->
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <!-- Release x64 configurations -->
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <!-- RtssDebug x64 configurations -->
+    <ProjectConfiguration Include="RtssDebug|x64">
+      <Configuration>RtssDebug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <!-- RtssRelease x64 configurations -->
+    <ProjectConfiguration Include="RtssRelease|x64">
+      <Configuration>RtssRelease</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <!-- **************************  -->
+  <!--                             -->
+  <!-- Files contained in project  -->
+  <!--                             -->
+  <!-- **************************  -->
+  <ItemGroup>
+    <ClInclude Include="e1000_80003es2lan.h" />
+    <ClInclude Include="e1000_82541.h" />
+    <ClInclude Include="e1000_82543.h" />
+    <ClInclude Include="e1000_82571.h" />
+    <ClInclude Include="e1000_82575.h" />
+    <ClInclude Include="e1000_api.h" />
+    <ClInclude Include="e1000_defines.h" />
+    <ClInclude Include="e1000_hw.h" />
+    <ClInclude Include="e1000_i210.h" />
+    <ClInclude Include="e1000_ich8lan.h" />
+    <ClInclude Include="e1000_mac.h" />
+    <ClInclude Include="e1000_manage.h" />
+    <ClInclude Include="e1000_mbx.h" />
+    <ClInclude Include="e1000_nvm.h" />
+    <ClInclude Include="e1000_osdep.h" />
+    <ClInclude Include="e1000_phy.h" />
+    <ClInclude Include="e1000_regs.h" />
+    <ClInclude Include="e1000_vf.h" />
+    <ClInclude Include="em_compat.h" />
+    <ClInclude Include="Ether.h" />
+    <ClInclude Include="if_em.h" />
+    <ClInclude Include="if_lem.h" />
+    <ClInclude Include="if_rtx.h" />
+    <ClInclude Include="if_var.h" />
+    <ClInclude Include="IntelNicDiag.h" />
+    <ClInclude Include="PciReadReg.h" />
+    <ClInclude Include="pcireg.h" />
+    <ClInclude Include="RtPCH.h" />
+    <ClInclude Include="_bus.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="e1000_80003es2lan.c" />
+    <ClCompile Include="e1000_82540.c" />
+    <ClCompile Include="e1000_82541.c" />
+    <ClCompile Include="e1000_82542.c" />
+    <ClCompile Include="e1000_82543.c" />
+    <ClCompile Include="e1000_82571.c" />
+    <ClCompile Include="e1000_82575.c" />
+    <ClCompile Include="e1000_api.c" />
+    <ClCompile Include="e1000_i210.c" />
+    <ClCompile Include="e1000_ich8lan.c" />
+    <ClCompile Include="e1000_mac.c" />
+    <ClCompile Include="e1000_manage.c" />
+    <ClCompile Include="e1000_mbx.c" />
+    <ClCompile Include="e1000_nvm.c" />
+    <ClCompile Include="e1000_osdep.c" />
+    <ClCompile Include="e1000_phy.c" />
+    <ClCompile Include="em_compat.c" />
+    <ClCompile Include="if_rtx.c" />
+    <ClCompile Include="IntelNicDiag.c" />
+    <ClCompile Include="PciReadRegDriver.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E0B19889-11F2-4020-9BD2-334CD98E7810}</ProjectGuid>
+    <RootNamespace>PciReadReg</RootNamespace>
+    <ProjectName>IntelNicDiag</ProjectName>
+  </PropertyGroup>
+  <!-- Default props -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <!--Set the .rtss target extension -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RtssRelease|x64'">
+    <TargetExt>.rtss</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RtssDebug|x64'">
+    <TargetExt>.rtss</TargetExt>
+  </PropertyGroup>
+  <!-- **************************  -->
+  <!--                             -->
+  <!-- Configurations              -->
+  <!--                             -->
+  <!-- **************************  -->
+  <!-- Debug x64 Project Configuration -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <!-- Release x64 Project Configuration -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <!-- RtssDebug x64 Project Configuration -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RtssDebug|x64'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <ExtensionsToDeleteOnClean>*.rtss;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
+    <PlatformToolset>v120</PlatformToolset>
+    <Rtx64LocalDebuggerCommand>$(TargetPath)</Rtx64LocalDebuggerCommand>
+    <TargetExt>.rtss</TargetExt>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <DebuggerFlavor>RtxBaseDm</DebuggerFlavor>
+  </PropertyGroup>
+  <!-- RtssRelease x64 Project Configuration -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RtssRelease|x64'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <ExtensionsToDeleteOnClean>*.rtss;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
+    <PlatformToolset>v120</PlatformToolset>
+    <Rtx64LocalDebuggerCommand>$(TargetPath)</Rtx64LocalDebuggerCommand>
+    <TargetExt>.rtss</TargetExt>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <DebuggerFlavor>RtxBaseDm</DebuggerFlavor>
+  </PropertyGroup>
+  <!-- **************************  -->
+  <!--                             -->
+  <!-- Configuration props         -->
+  <!--                             -->
+  <!-- **************************  -->
+  <!-- Default props -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <!-- Release x64 props -->
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(RTX64SDKDir2)\include\RTX64.Cpp.$(Platform).user.props" Condition="exists('$(RTX64SDKDir2)\include\RTX64.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <!-- Debug x64 props -->
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(RTX64SDKDir2)\include\RTX64.Cpp.$(Platform).user.props" Condition="exists('$(RTX64SDKDir2)\include\RTX64.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <!-- RtssRelease x64 props -->
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RtssRelease|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(RTX64SDKDir2)\include\RTX64.Cpp.$(Platform).user.props" Condition="exists('$(RTX64SDKDir2)\include\RTX64.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <!-- RtssDebug x64 props -->
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RtssDebug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(RTX64SDKDir2)\include\RTX64.Cpp.$(Platform).user.props" Condition="exists('$(RTX64SDKDir2)\include\RTX64.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <!-- Add .rtdll extension to RtssDebug and RtssRelease -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RtssDebug|x64'">
+    <TargetExt>.rtss</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RtssRelease|x64'">
+    <TargetExt>.rtss</TargetExt>
+  </PropertyGroup>
+  <!-- Turn off Manifest and Incremental Linker for RTSS -->
+  <PropertyGroup>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='RTSSDebug|x64'">false</EmbedManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='RTSSRelease|x64'">false</EmbedManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RTSSDebug|x64'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RTSSRelease|x64'">false</GenerateManifest>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RTSSDebug|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RTSSRelease|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <!-- **************************  -->
+  <!--                             -->
+  <!-- Compile/Link Configurations -->
+  <!--                             -->
+  <!-- **************************  -->
+  <!-- Release x64 -->
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(RTX64SDKDir2)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rtapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(RTX64SDKDir2)lib\$(Rtx64Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(RTX64SDKDir2)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <!-- Debug x64 -->
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(RTX64SDKDir2)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SDLCheck>false</SDLCheck>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(RTX64SDKDir2)lib\$(Rtx64Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>rtapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(RTX64SDKDir2)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <!-- RtssRelease x64 -->
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RtssRelease|x64'">
+    <PostBuildEvent>
+      <Command>"%RTX64Common%\bin\StampTool.exe" "$(TargetPath)"</Command>
+      <Message>RTX64 StampTool</Message>
+    </PostBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(RTX64SDKDir2)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/openmp- /Gs9999 %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader />
+      <PreprocessorDefinitions>_AMD64_;UNDER_RTSS;NDEBUG;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(IntDir)/$(ProjectName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>startupCRT.lib;libcmt.lib;libcpmt.lib;rtx_rtss.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(RTX64SDKDir2)lib\$(Rtx64Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Driver>Driver</Driver>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EnableUAC>false</EnableUAC>
+      <EntryPointSymbol>_RtapiProcessEntryCRT</EntryPointSymbol>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <LinkTimeCodeGeneration />
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress />
+      <SubSystem>Native</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(RTX64SDKDir2)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <!-- RtssDebug x64 -->
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RtssDebug|x64'">
+    <PostBuildEvent>
+      <Command>"%RTX64Common%\bin\StampTool.exe" "$(TargetPath)"</Command>
+      <Message>RTX64 StampTool</Message>
+    </PostBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(RTX64SDKDir2)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/openmp- /Gs9999 %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader />
+      <PreprocessorDefinitions>_AMD64_;UNDER_RTSS;_DEBUG;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(IntDir)/$(ProjectName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>startupCRT.lib;libcmtd.lib;libcpmtd.lib;rtx_rtss.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(RTX64SDKDir2)lib\$(Rtx64Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <Driver>Driver</Driver>
+      <EnableUAC>false</EnableUAC>
+      <EntryPointSymbol>_RtapiProcessEntryCRT</EntryPointSymbol>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <LinkTimeCodeGeneration />
+      <RandomizedBaseAddress />
+      <SubSystem>Native</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <StackReserveSize>131072</StackReserveSize>
+      <StackCommitSize>131072</StackCommitSize>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(RTX64SDKDir2)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(RTX64Common)\DebuggerExtensions\IntervalZero.targets" Condition="exists('$(RTX64Common)\DebuggerExtensions\IntervalZero.targets')" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
