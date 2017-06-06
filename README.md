@@ -11,6 +11,25 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 ## Reading Intel NIC Diagnostics
 
 
+ 
+  
+   
+    
+     
+      
+       
+        
+         
+          
+           
+            
+             
+              
+              
+               
+                
+                  
+                  .
 
 
 
@@ -41,8 +60,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 
 
-
-
+.
 
 ## This Page
 
