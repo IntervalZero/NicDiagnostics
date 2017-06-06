@@ -1,4 +1,4 @@
-# Welcome to the RTxperts GitHub Page
+# RTxperts GitHub Page
 
 
 
