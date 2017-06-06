@@ -8,7 +8,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 # Projects
 
-## [Reading Intel NIC Diagnostics](https://jekyllrb.com/)
+## [Reading Intel NIC Diagnostics](https://github.com/IntervalZero/RTxperts/tree/master/IntelNicDiagnostics)
 
 
  
